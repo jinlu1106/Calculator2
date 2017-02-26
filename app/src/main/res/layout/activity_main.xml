@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jinlu.calculator.MainActivity">
+
+    //右下角
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="right|bottom"
+        android:background="#dbd5d5"
+        android:id = "@+id/cal_input"/>
+
+    //第一行
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/cal_input">
+
+        //清除键
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id = "@+id/btn_clear"/>
+
+        //负号
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id = "@+id/btn_sign"/>
+
+        //删除键
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id = "@+id/btn_delete"/>
+
+        //除号
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_divide"/>
+
+    </LinearLayout>
+
+    //第二行
+
+
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/cal_input">
+
+        //数字7
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_seven"/>
+
+        //数字8
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_eight"/>
+
+        //数字9
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_nine"/>
+
+        //乘号
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_mul"/>
+
+    </LinearLayout>
+
+    //第三行
+
+    <LinearLayout
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/cal_input">
+
+        //数字4
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_four"/>
+
+        //数字5
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_five"/>
+
+        //数字6
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_six"/>
+
+        //减号
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_subtract"/>
+
+    </LinearLayout>
+
+    //第四行
+    <LinearLayout
+        android:layout_marginTop="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/cal_input">
+
+        //数字1
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_one"/>
+
+        //数字2
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_two"/>
+
+        //数字3
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_three"/>
+
+        //加号
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_plus"/>
+
+    </LinearLayout>
+
+    //第五行
+
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/cal_input">
+
+        //数字0
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_zero"/>
+
+        //小数点
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_point"/>
+
+        //等号
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:id="@+id/btn_equal"/>
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
